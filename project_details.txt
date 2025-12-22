@@ -1,0 +1,13 @@
+Snake and Ladder Variations – Simulation and Analysis
+
+This project focuses on analyzing multiple variations of the Snake and Ladder game through large-scale simulations developed entirely in Python. The objective was to study how changes in game mechanics and board design affect gameplay efficiency, measured primarily by the number of dice throws required to win.
+
+The study began with baseline experiments, including scenarios with no snakes and no ladders, a single snake, and a single ladder. These simple cases established reference points for understanding how individual elements influence game length. The analysis was then extended to a traditional Snake and Ladder configuration containing multiple snakes and ladders, where statistical measures such as mean and mode of dice throws were recorded over 10,000 automated matches.
+
+Beyond the traditional board, several advanced variations were explored. Grid variations were introduced in which player movement was allowed in both positive and negative directions, rather than following a fixed 0–100 path. In these grids, players could move forward and backward based on dice outcomes, significantly increasing the complexity of the game. Additionally, reduced grid sizes were tested to evaluate how limiting the board range impacted the total number of moves required to win.
+
+The dice mechanics were also modified. Instead of using a standard 1–6 dice, the simulations employed a custom dice with values ranging from −3 to +3 (excluding zero). Further experimentation included dice biasing, where the dice range dynamically changed based on the player’s position on the board. For example, when a player crossed certain positive or negative thresholds, the dice was biased to favor movement back toward the center, helping regulate game balance and completion time.
+
+Each configuration was simulated for 10,000 matches with a single player, and the number of dice throws required to finish each game was recorded. The results showed that grid design, dice behavior, and board constraints had a significant impact on game length and player experience. Dice biasing and certain grid reductions notably reduced extreme game durations while maintaining strategic complexity.
+
+Overall, this project was driven by personal interest and served as a comprehensive exercise in Python programming, simulation design, statistical analysis, and data-driven decision-making. The insights gained were later used to design optimized game boards, some of which were tested by Hope3 students and received strong positive feedback.
